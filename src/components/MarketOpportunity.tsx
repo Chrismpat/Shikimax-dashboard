@@ -22,7 +22,7 @@ export function MarketOpportunity() {
                 <h3 className="text-xl font-tech font-bold text-slate-900">Total Market</h3>
                 <p className="text-sm text-slate-500 mt-1">Chemical Building Blocks</p>
               </div>
-              <div className="text-[#A5D9D9] font-tech font-bold text-xl">&gt;$400B</div>
+              <div className="text-[#A5D9D9] font-tech font-bold text-xl">&gt;€400B</div>
             </div>
             <div className="h-40 w-full">
               <ResponsiveContainer width="100%" height="100%">
@@ -49,7 +49,7 @@ export function MarketOpportunity() {
                 <h3 className="text-xl font-tech font-bold text-slate-900">Addressable</h3>
                 <p className="text-sm text-slate-500 mt-1">Consumer Awareness</p>
               </div>
-              <div className="text-blue-500 font-tech font-bold text-xl">$40-50B</div>
+              <div className="text-blue-500 font-tech font-bold text-xl">€40-50B</div>
             </div>
             <div className="flex items-center justify-center h-40">
                 <div className="text-center">
@@ -86,6 +86,61 @@ export function MarketOpportunity() {
             </div>
             <p className="mt-4 text-sm text-slate-500 border-t border-slate-50 pt-4">Nearly half of younger generations demand sustainable options.</p>
           </motion.div>
+        </FadeIn>
+
+        {/* Beachhead Applications */}
+        <FadeIn delay={0.4} className="mt-12">
+          <div className="mb-6">
+            <h3 className="text-xl font-tech font-bold text-slate-900 flex items-center gap-3">
+              <span className="w-2 h-6 bg-[#A5D9D9] rounded-full"></span>
+              Beachhead: Cosmetics & Personal Care
+            </h3>
+            <p className="text-sm text-slate-500 mt-1 ml-5">Near-term product launches targeting premium clean-label ingredients.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <motion.div whileHover={{ y: -3 }} className="bg-white border border-stone-100 rounded-xl p-5 shadow-sm">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-rose-50 flex items-center justify-center">
+                  <span className="text-rose-500 text-sm">💊</span>
+                </div>
+                <h4 className="font-tech font-bold text-slate-900">Acne & Exfoliation</h4>
+              </div>
+              <p className="text-xs text-slate-500 mb-3">Bio-based salicylic acid for anti-acne creams and chemical exfoliants.</p>
+              <div className="flex items-center gap-4 text-xs">
+                <span className="text-[#A5D9D9] font-bold">€600M TAM</span>
+                <span className="text-slate-400">•</span>
+                <span className="text-slate-600 font-medium">100% Bio</span>
+              </div>
+            </motion.div>
+            <motion.div whileHover={{ y: -3 }} className="bg-white border border-stone-100 rounded-xl p-5 shadow-sm">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-purple-50 flex items-center justify-center">
+                  <span className="text-purple-500 text-sm">✨</span>
+                </div>
+                <h4 className="font-tech font-bold text-slate-900">Skin Lightening</h4>
+              </div>
+              <p className="text-xs text-slate-500 mb-3">Sustainable hydroquinone & arbutin alternatives for brightening products.</p>
+              <div className="flex items-center gap-4 text-xs">
+                <span className="text-[#A5D9D9] font-bold">HQ / Mequinol</span>
+                <span className="text-slate-400">•</span>
+                <span className="text-slate-600 font-medium">Arbutin</span>
+              </div>
+            </motion.div>
+            <motion.div whileHover={{ y: -3 }} className="bg-white border border-stone-100 rounded-xl p-5 shadow-sm">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center">
+                  <span className="text-emerald-500 text-sm">🛡️</span>
+                </div>
+                <h4 className="font-tech font-bold text-slate-900">Bio-Preservatives</h4>
+              </div>
+              <p className="text-xs text-slate-500 mb-3">100% bio-based 4-HBA precursor for sustainable parabens.</p>
+              <div className="flex items-center gap-4 text-xs">
+                <span className="text-[#A5D9D9] font-bold">4-HBA</span>
+                <span className="text-slate-400">•</span>
+                <span className="text-slate-600 font-medium">Parabens</span>
+              </div>
+            </motion.div>
+          </div>
         </FadeIn>
       </div>
     </section>

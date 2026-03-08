@@ -23,9 +23,17 @@ export function ApplicationsGallery() {
               className={`relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 ease-in-out border border-slate-200 shadow-sm ${activeId === product.id ? "flex-[3]" : "flex-1"}`}
               layout>
               <div className="absolute inset-0">
-                <img src={product.image} alt={product.title} className="w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-110" referrerPolicy="no-referrer" />
+                <img src={product.image} alt={product.title} className={`w-full h-full object-cover opacity-90 transition-transform duration-700 hover:scale-110 ${product.futureMarket ? 'blur-[2px] grayscale-[40%]' : ''}`} referrerPolicy="no-referrer" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
+                {product.futureMarket && (
+                  <div className="absolute inset-0 bg-slate-900/30 backdrop-blur-[1px]" />
+                )}
               </div>
+              {product.futureMarket && (
+                <div className="absolute top-4 right-4 z-20 px-3 py-1 rounded-full bg-slate-800/80 backdrop-blur-sm border border-slate-600/50 text-[10px] font-bold uppercase tracking-widest text-slate-300">
+                  Future Market
+                </div>
+              )}
               <div className="absolute inset-0 p-6 flex flex-col justify-end">
                 <div className={`transition-all duration-300 ${activeId === product.id ? "mb-0" : "mb-4"}`}>
                   {activeId === product.id && (

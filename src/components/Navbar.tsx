@@ -5,7 +5,7 @@ import { Logo } from "./Logo";
 
 const navItems = [
   { name: "Market", href: "#market" },
-  { name: "Platform", href: "#platform" },
+  { name: "Product", href: "#platform" },
   { name: "Economics", href: "#economics" },
   { name: "Products", href: "#products" },
   { name: "Impact", href: "#impact" },
@@ -29,7 +29,7 @@ export function Navbar() {
       initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
       <div className={`flex items-center justify-between px-6 py-3 rounded-full transition-all duration-300
         ${isScrolled || isOpen ? "bg-white/90 backdrop-blur-md shadow-lg border border-stone-200 w-full max-w-5xl" : "bg-transparent w-full max-w-7xl"}`}>
-        
+
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <Logo className="w-8 h-8" />
           <span className="text-xl font-tech font-bold text-slate-900 tracking-tight lowercase">shikimax</span>
@@ -48,20 +48,20 @@ export function Navbar() {
         </div>
 
         <button className="md:hidden text-slate-900 p-2 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {isOpen && (
         <motion.div initial={{ opacity: 0, scale: 0.95, y: -20 }} animate={{ opacity: 1, scale: 1, y: 0 }}
-            className="absolute top-20 left-4 right-4 bg-white rounded-3xl shadow-xl border border-stone-100 overflow-hidden p-4 flex flex-col gap-2">
-            {navItems.map((item) => (
-                <button key={item.name} onClick={() => scrollToSection(item.href)}
-                    className="text-left px-4 py-3 text-lg font-medium text-slate-900 hover:bg-stone-50 rounded-xl transition-colors cursor-pointer">
-                    {item.name}
-                </button>
-            ))}
-            <button className="mt-2 w-full py-3 bg-slate-900 text-white font-medium rounded-xl cursor-pointer">Partner</button>
+          className="absolute top-20 left-4 right-4 bg-white rounded-3xl shadow-xl border border-stone-100 overflow-hidden p-4 flex flex-col gap-2">
+          {navItems.map((item) => (
+            <button key={item.name} onClick={() => scrollToSection(item.href)}
+              className="text-left px-4 py-3 text-lg font-medium text-slate-900 hover:bg-stone-50 rounded-xl transition-colors cursor-pointer">
+              {item.name}
+            </button>
+          ))}
+          <button className="mt-2 w-full py-3 bg-slate-900 text-white font-medium rounded-xl cursor-pointer">Partner</button>
         </motion.div>
       )}
     </motion.nav>

@@ -15,9 +15,9 @@ export default function App() {
       <Navbar />
       <Hero />
       <MarketOpportunity />
-      <YieldEconomics />
-      <PlatformStrength />
       <ApplicationsGallery />
+      <PlatformStrength />
+      <YieldEconomics />
       <ImpactVision />
       <BusinessModel />
       <Team />
