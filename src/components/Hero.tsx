@@ -28,7 +28,7 @@ export function Hero() {
               <div className="px-5 py-2 rounded-full border border-[#A5D9D9]/30 bg-[#A5D9D9]/10 backdrop-blur-sm flex items-center gap-2">
                 <Dna size={14} className="text-[#3d8c8c]" />
                 <span className="text-[10px] md:text-xs tracking-[0.15em] text-[#3d8c8c] uppercase font-bold">
-                  Microbial Fermentation Platform
+                  Precision Fermentation of Aromatics
                 </span>
               </div>
             </div>
@@ -72,7 +72,7 @@ export function Hero() {
                   50%
                 </div>
                 <div className="text-xs md:text-sm text-slate-500 uppercase tracking-widest font-bold">
-                  Theoretical Yield
+                  Yield
                 </div>
               </div>
             </div>

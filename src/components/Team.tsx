@@ -12,7 +12,7 @@ export function Team() {
             <FlaskConical size={14} className="text-[#A5D9D9]" />
             <span className="text-[10px] font-bold tracking-widest text-slate-500 uppercase">Wageningen University & Research</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-tech font-bold text-slate-900 mb-6">World-Leading Experts</h2>
+          <h2 className="text-4xl md:text-5xl font-tech font-bold text-slate-900 mb-6">Our Team</h2>
           <div className="w-24 h-1 bg-slate-900 mx-auto rounded-full opacity-10"></div>
         </FadeIn>
 
@@ -30,12 +30,7 @@ export function Team() {
               </div>
               <div className="p-6">
                 <h3 className="font-tech text-xl font-bold text-slate-900 leading-tight mb-2 group-hover:text-blue-500 transition-colors">{member.name}</h3>
-                <p className="text-sm font-medium text-slate-500 mb-4 uppercase tracking-wide">{member.role}</p>
-                <div className="flex flex-wrap gap-2">
-                  {member.tags.map((tag, t) => (
-                    <span key={t} className={`text-[10px] font-bold px-2.5 py-1 rounded-full border ${member.color} bg-opacity-50`}>{tag}</span>
-                  ))}
-                </div>
+                <p className="text-sm font-medium text-slate-500 uppercase tracking-wide">{member.role}</p>
               </div>
             </FadeIn>
           ))}

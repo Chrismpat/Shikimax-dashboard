@@ -9,6 +9,7 @@ export const galleryProducts = [
     id: "skincare",
     category: "Perfumery & Beauty",
     title: "Acne & Exfoliation",
+    molecule: "Salicylic Acid",
     image: willowBarkImg,
     stats: { market: "€600M TAM", growth: "100% Bio" },
     desc: "Premium bio-based salicylic acid for anti-acne creams and exfoliants. Meeting the demand for clean label skincare. Market Size: ~€600M."
@@ -17,6 +18,7 @@ export const galleryProducts = [
     id: "cosmetics",
     category: "Perfumery & Beauty",
     title: "Skin Lightening",
+    molecule: "Hydroquinone",
     image: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=800&auto=format&fit=crop",
     stats: { market: "HQ / Mequinol", growth: "Arbutin" },
     desc: "Eliminating the need for synthetic hydroquinone. High-value application for Perfumery & Beauty."
@@ -25,6 +27,7 @@ export const galleryProducts = [
     id: "preservatives",
     category: "Personal Care",
     title: "Bio-Preservatives",
+    molecule: "4-HBA",
     image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800&auto=format&fit=crop",
     stats: { market: "4-HBA", growth: "Parabens" },
     desc: "100% Bio-based 4-HBA, a critical precursor for sustainable parabens. Eliminating petrochemicals from shelf-life extenders."
@@ -33,6 +36,7 @@ export const galleryProducts = [
     id: "flavors",
     category: "Taste, Texture & Health",
     title: "Natural Flavors",
+    molecule: "Vanillin",
     image: "https://images.unsplash.com/photo-1603569283847-aa295f0d016a?q=80&w=800&auto=format&fit=crop",
     stats: { market: "Vanillin", growth: "High-Yield" },
     desc: "High-yield de novo production of Vanillin. Addressing the Taste, Texture & Health market.",
@@ -42,6 +46,7 @@ export const galleryProducts = [
     id: "vitamins",
     category: "Taste, Texture & Health",
     title: "Vitamins & UV Filters",
+    molecule: "pABA",
     image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=800&auto=format&fit=crop",
     stats: { market: "Aminobenzoate", growth: "Folic Acid" },
     desc: "Sustainable sourcing for critical vitamin production (B-complex) and UV filter precursors.",
@@ -84,9 +89,8 @@ export const marketData1 = [
 
 export const yieldData = [
   { name: '4-HBA', standard: 0.20, shikimax: 0.50 },
-  { name: 'Salicylic Acid', standard: 0.10, shikimax: 0.40 },
-  { name: 'pABA', standard: 0.15, shikimax: 0.45 },
-  { name: 'Anthranilate', standard: 0.12, shikimax: 0.38 },
+  { name: 'Salicylic Acid', standard: 0.18, shikimax: 0.40 },
+  { name: '3-HBA', standard: 0.15, shikimax: 0.35 },
 ];
 
 export const roadmapSteps = [

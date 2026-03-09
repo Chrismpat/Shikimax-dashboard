@@ -50,18 +50,17 @@ export function ApplicationsGallery() {
                 <AnimatePresence>
                   {activeId === product.id && (
                     <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} className="overflow-hidden">
-                      <p className="text-slate-200 mb-6 max-w-md">{product.desc}</p>
 
                       {/* Molecular Structure Overlay */}
                       <div className="absolute top-6 right-6 opacity-20 pointer-events-none text-white">
                         {product.id === "skincare" && (
                           <svg width="100" height="100" viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M50 35 L75 50 L75 80 L50 95 L25 80 L25 50 Z" stroke="currentColor" strokeWidth="2" />
-                            <circle cx="50" cy="65" r="15" stroke="currentColor" strokeWidth="2" />
+                            <path d="M50 45 L67 54 L67 72 L50 81 L33 72 L33 54 Z" stroke="currentColor" strokeWidth="1.2" />
                             <line x1="50" y1="35" x2="50" y2="15" stroke="currentColor" strokeWidth="2" />
                             <text x="50" y="10" textAnchor="middle" fontSize="10" fontWeight="bold" fill="currentColor" className="font-mono">COOH</text>
-                            <line x1="75" y1="50" x2="90" y2="40" stroke="currentColor" strokeWidth="2" />
-                            <text x="92" y="40" textAnchor="start" fontSize="10" fontWeight="bold" fill="currentColor" className="font-mono">OH</text>
+                            <line x1="25" y1="50" x2="8" y2="38" stroke="currentColor" strokeWidth="2" />
+                            <text x="5" y="32" textAnchor="middle" fontSize="10" fontWeight="bold" fill="currentColor" className="font-mono">OH</text>
                           </svg>
                         )}
                         {product.id === "cosmetics" && (
@@ -104,15 +103,11 @@ export function ApplicationsGallery() {
                         )}
                       </div>
 
-                      <div className="flex gap-6">
-                        <div>
-                          <div className="text-xs text-slate-400 uppercase tracking-wider">Target</div>
-                          <div className="text-2xl font-tech font-bold text-[#A5D9D9]">{product.stats.market}</div>
-                        </div>
-                        <div>
-                          <div className="text-xs text-slate-400 uppercase tracking-wider">Advantage</div>
-                          <div className="text-2xl font-tech font-bold text-[#A5D9D9]">{product.stats.growth}</div>
-                        </div>
+                      {/* Molecule label - bottom left */}
+                      <div className="mt-4 pb-2">
+                        <span className="px-3 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-sm font-mono font-bold text-white border border-white/20">
+                          {product.molecule}
+                        </span>
                       </div>
                     </motion.div>
                   )}

@@ -8,7 +8,7 @@ const navItems = [
   { name: "Product", href: "#platform" },
   { name: "Economics", href: "#economics" },
   { name: "Products", href: "#products" },
-  { name: "Impact", href: "#impact" },
+  { name: "Roadmap", href: "#impact" },
   { name: "Team", href: "#team" },
 ];
 
@@ -42,9 +42,6 @@ export function Navbar() {
               {item.name}
             </button>
           ))}
-          <button className="ml-4 px-6 py-2.5 bg-slate-900 hover:bg-stone-800 text-white text-sm font-medium rounded-full transition-all shadow-md hover:shadow-lg cursor-pointer">
-            Partner
-          </button>
         </div>
 
         <button className="md:hidden text-slate-900 p-2 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
@@ -61,7 +58,6 @@ export function Navbar() {
               {item.name}
             </button>
           ))}
-          <button className="mt-2 w-full py-3 bg-slate-900 text-white font-medium rounded-xl cursor-pointer">Partner</button>
         </motion.div>
       )}
     </motion.nav>

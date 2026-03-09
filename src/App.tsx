@@ -1,7 +1,9 @@
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { MarketOpportunity } from "./components/MarketOpportunity";
+import { TheProblem } from "./components/TheProblem";
 import { PlatformStrength } from "./components/PlatformStrength";
+import { ProductPortfolio } from "./components/ProductPortfolio";
 import { YieldEconomics } from "./components/YieldEconomics";
 import { ApplicationsGallery } from "./components/ApplicationsGallery";
 import { ImpactVision } from "./components/ImpactVision";
@@ -15,9 +17,11 @@ export default function App() {
       <Navbar />
       <Hero />
       <MarketOpportunity />
-      <ApplicationsGallery />
+      <TheProblem />
       <PlatformStrength />
+      <ProductPortfolio />
       <YieldEconomics />
+      <ApplicationsGallery />
       <ImpactVision />
       <BusinessModel />
       <Team />
